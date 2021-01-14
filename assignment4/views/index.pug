@@ -1,0 +1,46 @@
+//Student Name: Meitong Liu
+//Student ID:   101014282
+//Citation:     COMP2406 course note 
+
+
+html
+  head
+    title COMP 2406 Recipe Viewer
+    link(rel='stylesheet', type='text/css',href='style.css')
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js")
+    script(src='/recipePage.js')
+  body
+    h1 Comp2406 Recipes Database!
+    div 
+      label(for='recipeSelect') Recipe:
+      br
+      select#recipeSelect
+      br
+      button#recipeViewButton View
+    hr
+    div
+      br
+      label(for='recipeName') Name:
+      br
+      input#recipeName
+      br
+      label(for='recipeDuration') Duration:
+      br
+      input#recipeDuration
+      br
+      label(for='recipeIngredients') Ingredients:
+      br
+      textarea#recipeIngredients
+      br
+      label(for='recipeDirections') Steps:
+      br
+      textarea#recipeDirections
+      br
+      label(for='recipeNotes') Notes:
+      br
+      textarea#recipeNotes
+      br
+      button#recipeSubmitButton Submit
+      p(class="check", style="display:none;") &#10003
+
+    
